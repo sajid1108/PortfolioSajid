@@ -59,7 +59,7 @@ header {
   width: auto;
 }
 .socialMedia > a:hover {
-  background-color: #aa392d;
+  background-color: #000080;
 }
 
 @media only screen and (max-width: 1000px) {
