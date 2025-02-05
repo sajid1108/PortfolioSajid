@@ -1,12 +1,28 @@
+import { useState } from "react";
 import "../styles/Navbar.css";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { AiFillCloseCircle } from "react-icons/ai";
+
 function Navbar() {
+  const [statusTampil, setStatusTampil] = useState("");
+
+  function tampilMenu() {
+    if (statusTampil == "") {
+      setStatusTampil("tampil");
+    } else {
+      setStatusTampil("");
+    }
+  }
   return (
     <nav>
       <div className="wrapper">
         <div className="logo">
           <a href="">Sajid Abdul</a>
         </div>
-        <div className="menu">
+        <button onClick={tampilMenu}>
+          {statusTampil == "" ? <RxHamburgerMenu /> : <AiFillCloseCircle />}
+        </button>
+        <div className={`menu ${statusTampil}`} onClick={tampilMenu}>
           <ul>
             <li>
               <a href="#portfolio">Portfolio</a>
