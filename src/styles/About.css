@@ -42,8 +42,33 @@
   cursor: pointer;
 }
 
-.skills > svg:hover {
-  color: #aa392d;
+.skills > svg:nth-child(1):hover {
+  /* HTML */
+  color: #e34c26; /* Warna merah HTML */
+}
+
+.skills > svg:nth-child(7):hover {
+  /* Laravel */
+  color: #ff2d20; /* Warna merah Laravel */
+}
+
+.skills > svg:nth-child(2):hover {
+  color: #1572b6;
+}
+.skills > svg:nth-child(5):hover {
+  color: #61dafb;
+}
+.skills > svg:nth-child(6):hover {
+  color: #38bdf8;
+}
+.skills > svg:nth-child(4):hover {
+  /* PHP */
+  color: #777bb4; /* Warna biru */
+}
+
+.skills > svg:nth-child(3):hover {
+  /* JavaScript */
+  color: #f7df1e; /* Warna kuning JS */
 }
 
 @media only screen and (max-width: 1000px) {
