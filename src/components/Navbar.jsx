@@ -25,13 +25,13 @@ function Navbar() {
         <div className={`menu ${statusTampil}`} onClick={tampilMenu}>
           <ul>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a href="/#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="/#about">About</a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <a href="/#experience">Experience</a>
             </li>
           </ul>
         </div>
