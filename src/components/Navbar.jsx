@@ -2,6 +2,8 @@ import { useState } from "react";
 import "../styles/Navbar.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [statusTampil, setStatusTampil] = useState("");
@@ -17,7 +19,7 @@ function Navbar() {
     <nav>
       <div className="wrapper">
         <div className="logo">
-          <a href="">Sajid Abdul</a>
+          <Link to="/">Sajid Abdul</Link>
         </div>
         <button onClick={tampilMenu}>
           {statusTampil == "" ? <RxHamburgerMenu /> : <AiFillCloseCircle />}
@@ -25,13 +27,13 @@ function Navbar() {
         <div className={`menu ${statusTampil}`} onClick={tampilMenu}>
           <ul>
             <li>
-              <a href="/#portfolio">Portfolio</a>
+              <HashLink to="/#portfolio">Portfolio</HashLink>
             </li>
             <li>
-              <a href="/#about">About</a>
+              <HashLink to="/#about">About</HashLink>
             </li>
             <li>
-              <a href="/#experience">Experience</a>
+              <Link to="/experience">Experience</Link>
             </li>
           </ul>
         </div>

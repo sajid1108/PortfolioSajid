@@ -1,7 +1,7 @@
 import "../styles/About.css";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { FaSquareJs } from "react-icons/fa6";
 import { FaPhp } from "react-icons/fa";
 import { RiReactjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -21,7 +21,7 @@ function About() {
         <div className="skills">
           <FaHtml5 />
           <FaCss3Alt />
-          <IoLogoJavascript />
+          <FaSquareJs />
           <FaPhp />
           <RiReactjsFill />
           <RiTailwindCssFill />
