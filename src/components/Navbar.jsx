@@ -19,7 +19,7 @@ function Navbar() {
     <nav>
       <div className="wrapper">
         <div className="logo">
-          <Link to="/">Sajid Abdul</Link>
+          <Link to="/#">Sajid Abdul</Link>
         </div>
         <button onClick={tampilMenu}>
           {statusTampil == "" ? <RxHamburgerMenu /> : <AiFillCloseCircle />}
